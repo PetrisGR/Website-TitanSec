@@ -1,0 +1,21 @@
+.row {
+    flex-wrap: wrap;
+}
+
+.col-md-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    animation: fadeIn 0.65s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

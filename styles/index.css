@@ -1,0 +1,69 @@
+.home-banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+    background-image: url('../images/background.png'); /* Credits: https://unsplash.com/photos/two-men-working-on-computers-in-an-office-RIk-i9rXPao (Free to use under the Unpslash License - Blurred) */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+    animation: fadeIn 2s ease;
+}
+
+.banner-content {
+    z-index: 1;
+    animation: fadeIn 1s ease;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: slideInUp 1s ease;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #fff;
+    animation: slideInUp 1s ease;
+}
+
+.banner-content .btn { /* Credits: https://codepen.io/kanishkkunal/pen/QWGzBwz */
+    display: inline-block;
+    padding: 24px 32px;
+    border: 0;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.banner-content .btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to {  opacity: 1; }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

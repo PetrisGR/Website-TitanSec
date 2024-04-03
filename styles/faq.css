@@ -1,0 +1,12 @@
+.content .container .row .col-md-6 h5{
+    animation: fadeIn 1s ease;
+}
+
+.content .container .row .col-md-6 p {
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0.3; }
+    to {  opacity: 1; }
+}

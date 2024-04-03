@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TitanSec is a security company that provides security services to businesses and individuals.">
+
+    <title>TitanSec | Services</title>
+
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/services.css">
+    <link rel="stylesheet" href="../styles/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../scripts/script.js"></script>
+</head>
+<body>
+    <!-- Standalone Navigation Bar -->
+    <nav>
+        <div class="navigation-bar">
+            <div class="nav-wrapper">
+                <img src="../images/logo.png" onclick="GoBackHome()" style="cursor: pointer;" id="logo" alt="TitanSec Logo">
+
+                <div id="menuIcon" class="menu-icon">&#9776;</div>
+
+                <ul id="navLinks" class="nav-links">
+                    <li><a onclick="GoBackHome()">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Standalone Navigation Bar -->
+
+    <!-- Bootstrap Header -->
+    <div class="p-5 text-center page_title">
+        <h1 class="mb-2">Our Services</h1>
+        <h5 class="mb-2">Explore our range of cybersecurity services</h5>
+    </div> <br>
+    <!-- Bootstrap Header -->
+
+    <div class="content">
+        <div class="container text-light">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Penetration Testing Service -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../images/service1.jpg" class="card-img-top" alt="Penetration Testing"> <!-- Credits: https://ega.ee/wp-content/uploads/2020/10/cyber-test.jpg -->
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Penetration Testing</h5>
+                            <p class="card-text">Penetration testing, also known as ethical hacking, involves simulating real-world cyberattacks to identify vulnerabilities in your systems before malicious actors do.</p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Service</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Cross-Site Scripting (XSS)</td>
+                                        <td>€250</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SQL Injection</td>
+                                        <td>€300</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brute Force Attacks</td>
+                                        <td>€300</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Remote Code Execution (RCE)</td>
+                                        <td>€400</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a onclick="ImInterestedInServiceBtn('Penetration Testing')" class="btn btn-primary">I'm Interested</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Vulnerability Assessment Service -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../images/service2.jpg" class="card-img-top" alt="Vulnerability Assessment"> <!-- Credits: https://verityit.com/wp-content/uploads/2022/02/assessment.jpeg -->
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Vulnerability Assessment</h5>
+                            <p class="card-text">A vulnerability assessment evaluates your network and systems for security weaknesses, providing insights into areas that need improvement.</p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Service</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Network Scanning</td>
+                                        <td>€200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cloud Infrastructure Scanning</td>
+                                        <td>€400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Web Application Scanning</td>
+                                        <td>€500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mobile Application Scanning</td>
+                                        <td>€600</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a onclick="ImInterestedInServiceBtn('Vulnerability Assessment')" class="btn btn-primary">I'm Interested</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security Awareness Training Service -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../images/service3.jpg" class="card-img-top" alt="Security Awareness Training"> <!-- Credits: https://thumbs.dreamstime.com/b/cyber-security-data-protection-business-technology-privacy-concept-security-awareness-cyber-security-data-protection-business-206664191.jpg -->
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Security Awareness Training</h5>
+                            <p class="card-text">Security awareness training educates employees about cybersecurity best practices, reducing the risk of human error leading to security breaches.</p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Service</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Password Hygiene Training</td>
+                                        <td>€40</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Data Protection Guidelines</td>
+                                        <td>€75</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phising Simulation</td>
+                                        <td>€100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Social Engineering Awareness</td>
+                                        <td>€150</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a onclick="ImInterestedInServiceBtn('Security Awareness Training')" class="btn btn-primary">I'm Interested</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Incident Response Planning Service -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../images/service4.jpg" class="card-img-top" alt="Incident Response Planning"> <!-- Credits: https://www.pratum.com/images/blog/Incident-Response-Planning-Image_Pratum_20200312_CXX.jpg -->
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Incident Response Planning</h5>
+                            <p class="card-text"> Incident response planning involves developing strategies and procedures to address cybersecurity incidents promptly and effectively, minimizing their impact on your organization.</p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Service</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Incident Identification and Classification</td>
+                                        <td>€600</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Post-Incident Review and Documentation</td>
+                                        <td>€600</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Incident Containment and Eradication</td>
+                                        <td>€800</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a onclick="ImInterestedInServiceBtn('Incident Response Planning')" class="btn btn-primary">I'm Interested</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security Auditing Service -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../images/service5.jpg" class="card-img-top" alt="Security Auditing"> <!-- Credits: https://computer2000.bg/wp-content/uploads/2022/04/AUDIT.jpg -->
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Security Auditing</h5>
+                            <p class="card-text">Security auditing assesses your organization's compliance with industry standards and regulatory requirements, ensuring that security controls are properly implemented and maintained.</p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Service</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Access Control Review</td>
+                                        <td>€300</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Configuration Review</td>
+                                        <td>€400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Policy and Procedure Review</td>
+                                        <td>€500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Compliance Audit (e.g., GDPR, HIPAA)</td>
+                                        <td>€800</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a onclick="ImInterestedInServiceBtn('Security Auditing')" class="btn btn-primary">I'm Interested</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security Architecture Design Service -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="../images/service6.jpg" class="card-img-top" alt="Security Architecture Design"> <!-- Credits: https://miro.medium.com/v2/resize:fit:512/1*DQxb51_P6QQRSyTGMrxfBQ.jpeg -->
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Security Architecture Design</h5>
+                            <p class="card-text">Security architecture design involves developing robust and resilient security frameworks tailored to your organization's specific needs, ensuring that your systems are protected against evolving threats.</p>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Service</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Threat Modeling</td>
+                                        <td>€1000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Encryption Strategy Development</td>
+                                        <td>€1000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Identity and Access Management (IAM) Design</td>
+                                        <td>€1500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Secure Network Design</td>
+                                        <td>€2000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a onclick="ImInterestedInServiceBtn('Security Architecture Design')" class="btn btn-primary">I'm Interested</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- Bootstrap Footer -->
+    <footer class="bg-light text-dark">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-md-start text-center mb-3 mb-md-0">
+                    <p class="m-0" style="font-weight: 600;">&copy; TitanSec 2024 | Made by Stamatis Petris</p>
+                </div>
+                <div class="col-md-6 text-md-end text-center">
+                    <section>
+                        <a class="btn btn-outline-dark btn-floating m-1" href="https://github.com/PetrisGR" role="button"><i class="fa fa-github"></i></a>
+                        <a class="btn btn-outline-dark btn-floating m-1" href="https://www.linkedin.com/in/petris15/" role="button"><i class="fa fa-linkedin"></i></a>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap Footer -->
+</body>
+</html>

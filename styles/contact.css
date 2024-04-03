@@ -1,0 +1,33 @@
+form, h2 {
+    animation: slideFromLeft 1s ease;
+}
+
+h3, p {
+    animation: slideInUp 1s ease;
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+@keyframes slideFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-15%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

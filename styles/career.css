@@ -1,0 +1,56 @@
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.fadeIn {
+    animation: fadeIn 2s ease;
+}
+
+.content .container .row .col-md-6 img{
+    animation: fadeIn 1s ease;
+}
+
+.content .container .row .col-md-6 h1 {
+    animation: slideFromRight 1.75s ease;
+}
+
+.slideFromRight {
+    animation: slideFromRight 1.75s ease;
+}
+
+.content .container .row .col-md-6 p {
+    font-size: 26px;
+}
+
+.content .container .row .col-md-6 {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.content .container .row .col-md-6:hover {
+    opacity: 0.8;
+}
+
+.card {
+    animation: fadeIn 2s ease-in;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    opacity: 0.9;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to {  opacity: 1; }
+}
+
+@keyframes slideFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(40%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
