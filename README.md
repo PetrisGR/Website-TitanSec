@@ -1,4 +1,4 @@
-# 🛡️ TitanSec Website [![GitHub stars](https://img.shields.io/github/stars/PetrisGR/Website-TitanSec.svg)](https://github.com/PetrisGR/Website-TitanSec/stargazers) [![GitHub license](https://img.shields.io/github/license/PetrisGR/Website-TitanSec.svg)](https://github.com/PetrisGR/Website-TitanSec/blob/master/LICENSE)
+# 🛡️ TitanSec Website Project [![GitHub stars](https://img.shields.io/github/stars/PetrisGR/Website-TitanSec.svg)](https://github.com/PetrisGR/Website-TitanSec/stargazers) [![GitHub license](https://img.shields.io/github/license/PetrisGR/Website-TitanSec.svg)](https://github.com/PetrisGR/Website-TitanSec/blob/master/LICENSE)
 
 ---
 
