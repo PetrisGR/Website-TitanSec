@@ -1,61 +1,51 @@
-.content .container .row .col-md-6 img {
-    animation: fadeIn 1s ease;
+.content {
+    color: white;
+    margin-top: 1%;
 }
 
-.content .container .row .col-md-3 {
-    transition: transform 0.5s ease-in-out;
-    transform: scale(0.95);
-}
-
-.content .container .row .col-md-3:hover {
-    transform: scale(1.0);
-}
-
-.content .container .row .col-md-6,
-.content .container .row .col-md-12 {
-    transition: opacity 0.5s ease-in-out;
-}
-
-.content .container .row .col-md-6:hover,
-.content .container .row .col-md-12:hover {
-    opacity: 0.8;
-}
-
-.slideFromLeft {
-    animation: slideFromLeft 1.75s ease;
-}
-
-.slideFromRight {
-    animation: slideFromRight 1.75s ease;
-}
-
-.content .container .row .col-md-6 p {
+.content p {
     font-size: 22px;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to {  opacity: 1; }
+img {
+    animation: fadeIn 1s ease;
 }
 
-@keyframes slideFromRight {
-    0% {
-        opacity: 0;
-        transform: translateX(40%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0%);
-    }
+.aboutus_img {
+    max-width: 100%;
+    height: auto;
 }
 
-@keyframes slideFromLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-40%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0%);
-    }
+.aboutus_img:hover {
+    opacity: 0.9;
+}
+
+.meettheteam_title {
+    text-align: center;
+}
+
+.team_members {
+    text-align: center;
+}
+
+.team_member {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.4s ease-in-out;
+    transform: scale(0.95);
+    outline: white solid 1px;
+}
+
+.team_member:hover {
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.0);
+}
+
+.slideFromLeft {
+    animation: slideFromLeft 1.5s ease;
+}
+
+.slideFromRight {
+    animation: slideFromRight 1.5s ease;
 }

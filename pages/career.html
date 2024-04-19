@@ -7,16 +7,14 @@
 
     <title>TitanSec | Career</title>
 
+    <link rel="stylesheet" href="../styles/grid.css">
     <link rel="stylesheet" href="../styles/global.css">
     <link rel="stylesheet" href="../styles/career.css">
     <link rel="stylesheet" href="../styles/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="../scripts/script.js"></script>
 </head>
 <body>
-    <!-- Standalone Navigation Bar -->
     <nav>
         <div class="navigation-bar">
             <div class="nav-wrapper">
@@ -35,27 +33,22 @@
             </div>
         </div>
     </nav>
-    <!-- Standalone Navigation Bar -->
 
-    <!-- Bootstrap Header -->
-    <div class="p-5 text-center page_title">
-        <h1 class="mb-2">Career Opportunities</h1>
-        <h5 class="mb-2">Explore exciting opportunities to join our team</h5>
+    <div class="page_title">
+        <h1>Career Opportunities</h1>
+        <h5>Explore exciting opportunities to join our team</h5>
     </div> <br>
-    <!-- Bootstrap Header -->
 
     <div class="content">
-        <div class="container text-light">
+        <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <img src="../images/career.jpg" alt="Career Opportunities" class="img-fluid"> <!-- Credits: https://unsplash.com/photos/low-angle-photography-of-man-in-the-middle-of-buidligns-Ua-agENjmI4 -->
+                <div class="col-md-6 slideFromLeft">
+                    <img src="../images/career.jpg" alt="Career Opportunities" class="career_img"> <!-- Credits: https://unsplash.com/photos/low-angle-photography-of-man-in-the-middle-of-buidligns-Ua-agENjmI4 -->
                 </div>
                 
-                <div class="col-md-6">
-                    <br>
+                <div class="col-md-6 slideFromRight">
                     <h1>Career Opportunities</h1>
-                    <br>
-                    <p class="slideFromRight">At TitanSec, we are always looking for talented individuals to join our team. If you are passionate about cybersecurity and eager to make a difference, we want to hear from you. Explore our current job openings and apply today to embark on an exciting career journey with TitanSec.</p>
+                    <p style="font-size: 28px;">At TitanSec, we are always looking for talented individuals to join our team. If you are passionate about cybersecurity and eager to make a difference, we want to hear from you. Explore our current job openings and apply today to embark on an exciting career journey with TitanSec.</p>
                 </div>
             </div>
 
@@ -63,16 +56,16 @@
             <hr>
             <br>
 
-            <h1 class="fadeIn">Current Job Openings</h1>
+            <h1>Current Job Openings</h1>
 
-            <div class="row mt-1 g-4">
+            <div class="row mt-1 g-4 fadeIn">
                 <div class="col-md-4">
                     <div class="card">
-                        <div class="card-body">
+                        <div>
                             <h5 class="card-title">Cybersecurity Analyst</h5>
                             <p class="card-text">We are actively recruiting a skilled Cybersecurity Analyst to bolster our team, tasked with vigilantly monitoring security systems, analyzing potential data breaches, and executing robust security measures to safeguard our organization's digital assets.</p>
                             <div class="card-footer">
-                                <a class="btn btn-primary" onclick="ApplyNowBtn()">Apply Now</a>
+                                <a class="btn" onclick="ApplyNowBtn()">Apply Now</a>
                             </div>
                         </div>
                     </div>
@@ -80,11 +73,11 @@
                 
                 <div class="col-md-4">
                     <div class="card">
-                        <div class="card-body">
+                        <div>
                             <h5 class="card-title">Network Administrator</h5>
                             <p class="card-text">We are looking for a Network Administrator to maintain and manage our organization's network infrastructure. Responsibilities include troubleshooting network issues, installing and configuring hardware, and ensuring network security.</p>
                             <div class="card-footer">
-                                <a class="btn btn-primary" onclick="ApplyNowBtn()">Apply Now</a>
+                                <a class="btn" onclick="ApplyNowBtn()">Apply Now</a>
                             </div>
                         </div>
                     </div>
@@ -92,11 +85,11 @@
                 
                 <div class="col-md-4">
                     <div class="card">
-                        <div class="card-body">
+                        <div>
                             <h5 class="card-title">Security Consultant</h5>
                             <p class="card-text">We are in need of a Security Consultant to provide expert guidance on cybersecurity strategies and solutions. Responsibilities include conducting risk assessments, developing security policies, and advising clients on security best practices.</p>
                             <div class="card-footer">
-                                <a class="btn btn-primary" onclick="ApplyNowBtn()">Apply Now</a>
+                                <a class="btn" onclick="ApplyNowBtn()">Apply Now</a>
                             </div>
                         </div>
                     </div>
@@ -106,17 +99,17 @@
             <br>
             <hr>
             <br>
-            
+
             <section id="job_application_form">
-                <h1 class="mt-2">Job Application Form</h1>
-                <br>
+                <h2 class="mt-2">Job Application Form</h2>
+                
                 <form id="jobApplicationForm">
                     <div class="row">
                         <div class="form-group col-md-6">
                             <label for="fullName">Full Name: *</label>
                             <input type="text" class="form-control" placeholder="Enter your full name" id="fullName" name="fullName" required>
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-5">
                             <label for="jobPosition">Job Position: *</label>
                             <select class="form-control" id="jobPosition" name="jobPosition" required>
                                 <option value="" selected disabled>Select job position</option>
@@ -138,9 +131,9 @@
                             <input type="tel" class="form-control" placeholder="Enter your phone number" id="career_phone" name="phone" required>
                         </div>
     
-                        <div class="form-group col md-4">
+                        <div class="form-group col-md-4 ">
                             <label for="linkedin">LinkedIn Profile URL: *</label>
-                            <input type="url" class="form-control" placeholder="Enter your LinkedIn Profile URL" id="linkedin" name="linkedin" required>
+                            <input type="url" class="form-control" placeholder="Enter  LinkedIn Profile URL" id="linkedin" name="linkedin" required>
                         </div>
                     </div>
     
@@ -164,29 +157,25 @@
                         <input type="file" class="custom-file-input" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
                     </div>
     
-                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                    <button type="submit" class="btn">Submit Application</button>
                 </form>
                 <br>
             </section>
         </div>
     </div>
 
-    <!-- Bootstrap Footer -->
-    <footer class="bg-light text-dark">
+    <footer>
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-md-start text-center mb-3 mb-md-0">
-                    <p class="m-0" style="font-weight: 600;">&copy; TitanSec 2024 | Made by Stamatis Petris</p>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-6">
+                    <p style="font-weight: 600;">&copy; TitanSec 2024 | Created By: Petris</p>
                 </div>
-                <div class="col-md-6 text-md-end text-center">
-                    <section>
-                        <a class="btn btn-outline-dark btn-floating m-1" href="https://github.com/PetrisGR" role="button"><i class="fa fa-github"></i></a>
-                        <a class="btn btn-outline-dark btn-floating m-1" href="https://www.linkedin.com/in/petris15/" role="button"><i class="fa fa-linkedin"></i></a>
-                    </section>
+                <div id="socialmedia-icons" class="col-md-6">
+                    <a class="btn-socialmedia m-1" href="https://github.com/PetrisGR" role="button"><i class="fa fa-github"></i></a>
+                    <a class="btn-socialmedia m-1" href="https://www.linkedin.com/in/petris15/" role="button"><i class="fa fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- Bootstrap Footer -->
 </body>
 </html>

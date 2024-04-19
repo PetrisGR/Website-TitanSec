@@ -2,7 +2,7 @@ function GoBackHome() {
     window.location.href = "/";
 }
 
-function ImInterestedInServiceBtn(service) {
+function BookServiceBtn(service) {
     window.location.href = "/pages/contact.html?subject=" + "Interested in " + service + " Service" + "&message=" + "I am interested in the " + service + " service. Please contact me with more information.";
 }
 
