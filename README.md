@@ -8,7 +8,7 @@
 
 ## Description
 
-This website is a college assignment project featuring the hypothetical cybersecurity company, TitanSec. Developed primarily with Bootstrap, it showcases various cybersecurity services in a user-friendly and fully-responsive manner. Please note that TitanSec is a fictional entity created solely for the purpose of this project.
+This website is a college assignment project featuring the hypothetical cybersecurity company, TitanSec. It showcases various cybersecurity services in a user-friendly and fully-responsive manner. Please note that TitanSec is a fictional entity created solely for the purpose of this project.
 
 ## Features
 
@@ -22,16 +22,15 @@ This website is a college assignment project featuring the hypothetical cybersec
 ## Pages
 
 - **Home**: The landing page of the website.
-- **About**: Details about TitanSec, including its information, and mission.
+- **About**: Details about TitanSec, including its information, mission and team.
 - **Services**: Information about the cybersecurity services offered by TitanSec, including pricing.
 - **FAQ**: Frequently Asked Questions section addressing common queries about TitanSec and its services.
 - **Career**: Job listings and application form for individuals interested in joining the TitanSec team.
-- **Contact**: Contact form and location details for reaching out to TitanSec.
+- **Contact**: Contact form and company details for reaching out to TitanSec.
 
 ## Tools Used
 
 - HTML5
 - CSS3
 - JavaScript
-- Bootstrap
-- Font Awesome
+- Font Awesome Icons
